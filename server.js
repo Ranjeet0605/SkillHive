@@ -4,4 +4,4 @@ const dotenv = require("dotenv");
 dotenv.config({ path: "./config/.env" })
 
 connectionDb();
-app.listen(5000, () => console.log("server is running !"));
+app.listen(process.env.PORT, () => console.log(`server is running on port ${process.env.PORT}`));
